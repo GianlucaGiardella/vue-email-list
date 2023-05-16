@@ -19,7 +19,7 @@
 <body>
     <div id="app" v-cloak>
         <ul>
-            <li v-for="email in emailArr">{{ email }}</li>
+            <li v-if="emailArr.length === emailNum" v-for="email in emailArr">{{ email }}</li>
         </ul>
     </div>
 </body>
